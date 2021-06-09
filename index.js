@@ -1,21 +1,16 @@
-
-
-
-
-// объявление модуля A
-// modules.define('A', [], (provide) => { provide(1) });
-// объявление модуля B
-// modules.define('B', [], (provide) => { setTimeout(() => { provide(2) }, 1000); });
-// Полезная логика modules.require(['A', 'B'], (A, B) => { console.log(A + B);
-// 1 + 2 = 3 }); // вывод для проверки асинхронности require console.log(4);
-// 4
-
-
-
-
-
-
-
+// modules.define('A', [], (provide) => {
+//     provide(1)
+// });
+//
+// modules.define('B', [], (provide) => {
+//     setTimeout(() => {
+//         provide(2)
+//     }, 1000);
+// });
+//
+// modules.require(['A', 'B'], (A, B) => {
+//     console.log(A + B); // 1 + 2 = 3
+// });
 
 $(document).ready(function() {
     $(document).on("click", ".switchable-tabs li:not(.active)", function() {
